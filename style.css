@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f5f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #009688;
+  color: white;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-heading {
+  flex: 1 100%;
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffe082;
+}
+
+/* Main Content */
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #00796b;
+}
+
+.contact-info,
+.feedback-form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  font-size: 14px;
+}
+
+button {
+  margin-top: 15px;
+  background-color: #00796b;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+/* Typing Test Specific */
+#quote {
+  font-size: 18px;
+  margin-bottom: 15px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+#input-box {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #004d40;
+  color: white;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    align-self: flex-end;
+  }
+
+  .main-heading {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}

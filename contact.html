@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Typing Speed Tester</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1 class="main-heading">Typing Speed Tester</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="typing-test.html">Typing Test</a>
+      <a href="contact.html">Contact</a>
+      
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <p><strong>Name:</strong> Vanshita</p>
+      <p><strong>Email:</strong> <a href="mailto:vanshitaa2@gmail.com">vanshitaa2@gmail.com</a></p>
+      <p><strong>College:</strong> Guru Nanak Dev University, Amritsar</p>
+    </section>
+
+    <section class="feedback-form">
+      <h2>Send Feedback</h2>
+      <form id="feedbackForm" onsubmit="submitFeedback(event)">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" placeholder="Please enter your name here" required />
+
+        <label for="message">Your Feedback:</label>
+        <textarea id="message" placeholder="Please enter your feedback here" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="feedback-message" style="margin-top: 10px; font-weight: bold; color: green;"></p>
+    </section>
+  </main>
+
+  <footer>
+    © Typing Speed Tester | Vanshita
+  </footer>
+
+  <script>
+    function submitFeedback(event) {
+      event.preventDefault();
+      const form = document.getElementById("feedbackForm");
+      const message = document.getElementById("feedback-message");
+
+      message.textContent = "Thank you for your feedback!";
+      form.reset();
+    }
+
+    // Optional: Dark mode toggle if you want it across pages
+    const toggleBtn = document.getElementById("mode-toggle");
+    if (toggleBtn) {
+      toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+      });
+    }
+  </script>
+</body>
+</html>
